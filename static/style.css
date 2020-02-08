@@ -1,0 +1,28 @@
+body {
+	background: white;
+	color: black;
+}
+
+.button {
+  font: bold 15px Arial;
+  text-decoration: none;
+  background-color: #8b0000;
+  color: #ffffff;
+  padding: 50px 50px 50px 50px;
+  border-top: 1px solid #CCCCCC;
+  border-right: 1px solid #333333;
+  border-bottom: 1px solid #333333;
+  border-left: 1px solid #CCCCCC;
+  box-shadow: 0 9px #999;
+}
+
+.button:hover {
+  background-color: #4CAF50; /* Green */
+  color: #333333;
+}
+
+.button:active {
+  background-color: #4CAF50;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}

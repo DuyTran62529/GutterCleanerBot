@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Janitor1</title>
+		<link rel="stylesheet" href='../static/style.css'/>
+	</head>
+	<body>
+		<center><img id="camera" src="{{ url_for('video_feed') }}" width="560" height="400"></center>
+      <h2></h2>
+      <h3> 
+         <center><button class="button" onclick="Start()">START</button></center> 
+      </h3>
+      <h3> 
+         <center><button class="button" onclick="Stop()">STOP</button></center>
+      </h3>
+      <h3> 
+         <center><button class="button" onclick="Rev()">REVERSE</button></center>
+      </h3>
+
+      <script type="text/javascript">
+      	function Start() {
+      		window.location.reload();
+      		window.stop();
+      		window.location.assign("/Start");
+      	}
+      	function Stop() {
+      		window.location.reload();
+      		window.stop();
+      		window.location.assign("/Stop");
+      	}
+      	function Rev() {
+      		window.location.reload();
+      		window.stop();
+      		window.location.assign("/Rev");
+      	}
+
+      </script>
+      
+	</body>
+</html>
